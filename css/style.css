@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Montserrat+Alternates:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap');
+
+/* font-family: 'Kalam', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Poppins', sans-serif; */
+* {
+  list-style: none;
+}
+
+/* :root {
+  --red: #e52029;
+  --black: #151515;
+  --green: #7fd02c;
+} */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+::selection {
+  background: var(--red);
+  color: azure;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                START HEADER                                */
+/* -------------------------------------------------------------------------- */
+section#headerHolder {
+  margin-bottom: 17rem;
+}
+
+.header {
+  background-color: #667c99;
+  height: 16rem;
+}
+
+.header-logo {
+  padding: 3rem 5rem;
+}
+
+.headerImage img {
+  filter: drop-shadow(8px 9px 18px grey);
+}
+
+.headerImage {
+  top: 17rem;
+}
+
+/* mediaQuery */
+@media (max-width:820px) {
+  .header-logo {
+    padding: 1rem;
+    float: right;
+  }
+
+  section#headerHolder {
+    margin-bottom: 5rem;
+  }
+
+  .headerImage {
+    top: 27rem;
+  }
+
+  .headerImage img {
+
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .headerImage {
+    top: 32rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 END HEADER                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 start about                                */
+/* -------------------------------------------------------------------------- */
+
+.aboutShow h4 {
+  padding: 0.4rem;
+  font-size: 2rem;
+}
+
+.aboutShow {
+  background-color: #667c99;
+}
+
+.aboutCaption.text-center h2 {
+  font-size: 3rem;
+  color: grey;
+}
+
+/* mediaQuery */
+@media (max-width:820px) {
+  .aboutCaption.text-center h2 {
+    font-size: 1.8rem;
+  }
+
+  .aboutShow h4 {
+    font-size: 1rem;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  End ABOUT                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                 START CARD                                 */
+/* -------------------------------------------------------------------------- */
+.card {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 0
+}
+
+.card-body p {
+  padding: 0 3rem;
+}
+
+.card-body a {
+  font-size: 1.8rem;
+}
+
+p.itemCustom {
+  font-style: italic;
+  font-weight: 600;
+}
+
+
+@media screen and (min-width: 820px) and (max-width: 822px) {
+  .card.m-auto {
+    width: 18rem !important;
+  }
+
+  .card-body p {
+    padding: 0 0rem;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  END CART                                  */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                START FOOTER                                */
+/* -------------------------------------------------------------------------- */
+section#footer {
+  background-color: #667c99;
+  padding: 5rem;
+}
+
+@media (max-width:820px) {
+  .listWeb {
+    flex-direction: column;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 END FOOTER                                 */
+/* -------------------------------------------------------------------------- */
